@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ping Pong</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+
+    </head>
+    <body background="background1.jpg">
+        <div id="insta" class="modal fade">
+            <div  class="modal-dialog">
+                <div  class="modal-content">
+                    <div class="modal-header" style="width: 100%;">
+<button class="close" data-dismiss="modal">&times;</button>
+<h2 class="modal-title">Instructions</h2>
+<div class="modal-body">
+    <h3>Move your right wrist up and down to move the paddle and block the ball from going in your goal(A red dot should appear). Object of the game is to get the ball into the other persons goal. Keep yourself 3-4 feet away from the webcamera </h4>
+</div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+<center>
+    <h1 class="btn btn-warning" id="head">Ping Pong <button id="in" class="btn" data-toggle="modal" data-target="#insta">Instructions</button></h1>
+    <br>
+    <br>
+    <button class="btn btn-success" onclick="play()">Play</button>
+    <br>
+    <h2 class="btn btn-info"></h2>
+<br>
+    <button class="btn btn-danger" onclick="restart()">Restart</button>
+      <br>
+<br>
+<div>
+      <h4  class="btn btn-info" style="width: 100% !important; bottom: 0;" >Made by: me</h4>
+</div>
+</center>
+        <script src="main.js"></script>
+    </body>
+</html>
